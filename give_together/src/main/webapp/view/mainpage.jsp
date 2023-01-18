@@ -102,7 +102,9 @@ a{
 
 
 <div class="container">
-	<h1>컨테이너2</h1>
+	<a href="${pageContext.request.contextPath}/view/fundingPage.jsp">
+	<h1>펀딩</h1>
+	</a>
   <div class="row">
 
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
@@ -160,7 +162,9 @@ a{
 </div>
 
 <div class="container">
-	<h1>컨테이너3</h1>
+	<a href="${pageContext.request.contextPath}/view/volunteerPage.jsp">
+	<h1>봉사활동</h1>
+	</a>
   <div class="row">
 
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
