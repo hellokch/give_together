@@ -11,26 +11,34 @@
 
 <style>
 div{
-	margin : 0.5rem;
+	padding : 0.1rem;
 }
 
 .container{
-	background-color : lightgreen;
-	min-width : 76rem;	
+	background-color : lightgreen; 
+	min-width : 85rem;	
 	margin-top : 1rem;
 	margin-bottom : 1rem;
 	padding-top : 1rem;
+
+}
+.row{	
+	justify-content : space-evenly;
 }
 .picarea{
 	min-width : 250px;
 	min-height : 250px;
-	background-color : yellow;
+	background-color : yellow; 
+	margin-top : 0.5rem;
 }
+
 </style>
 <body>
 
 <div class="container">
+	<a href="${pageContext.request.contextPath}/member/gibupage">
 	<h1>기부 영역</h1>
+	</a>
   <div class="row">
 
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
