@@ -15,7 +15,7 @@
 <form action="${pageContext.request.contextPath}/member/loginPro" method="post" >
 
   <fieldset>
-    <legend>회원가입페이지 입니다(수정 가능합니다)22</legend>
+    <legend>회원가입페이지 입니다(수정 가능합니다)232</legend>
     
     
     
