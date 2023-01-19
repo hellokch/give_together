@@ -28,10 +28,10 @@ public class GiveTogetherController extends MskimRequestMapping{
 		return "/view/fundingPage.jsp";
 	}
 	
-	@RequestMapping("voluteer")
+	@RequestMapping("volunteer")
 	public String voluteer(HttpServletRequest request, HttpServletResponse response){
 		System.out.println("To voluteerPage");
-		return "/view/voluteerPage.jsp";
+		return "/view/volunteerPage.jsp";
 	}
 
 }
