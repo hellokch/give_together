@@ -8,5 +8,6 @@
 </head>
 <body>
 donation page 입니다.
+test1212
 </body>
 </html>
