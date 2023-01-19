@@ -8,7 +8,7 @@
 </head>
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 <style>
-.list-group{
+#list-group{
 	max-width : 20rem;
 	background-color : sky;
 	margin : 0 auto;	
@@ -29,7 +29,6 @@ input{
       </div>
   
   
-</div>
   </li>
   
   <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -57,7 +56,5 @@ input{
 
 
 
-
-</div>
 </body>
 </html>
