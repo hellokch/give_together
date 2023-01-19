@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>zGive 같이 하는 가치</title>
+<title>Give 같이 하는 가치</title>
 
 </head>
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
@@ -68,7 +68,7 @@ a{
 </style>
 <div class="container">
 	<a href="${pageContext.request.contextPath}/view/donationPage.jsp">
-	<h1>기부 영역</h1>
+	<h1 >기부 영역</h1>
 	</a>
   <div class="row">
 

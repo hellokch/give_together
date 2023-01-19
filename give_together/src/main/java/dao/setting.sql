@@ -9,7 +9,7 @@ location varchar(30),
 location1 varchar(30),
 nickname varchar(10),
 gender varchar(1)
-)
+);
 
 create table usergroup(
 id varchar(20) primary key,
@@ -23,5 +23,5 @@ location1 varchar(30),
 p_name varchar(10),
 intro varchar(50),
 picture varchar(100)
-)
+);
 
