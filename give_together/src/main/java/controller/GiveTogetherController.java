@@ -33,5 +33,11 @@ public class GiveTogetherController extends MskimRequestMapping{
 		System.out.println("To voluteerPage");
 		return "/view/volunteerPage.jsp";
 	}
+	
+	@RequestMapping("loginForm")
+	public String loginForm(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To loginForm");
+		return "/view/user/loginForm.jsp";
+	}
 
 }
