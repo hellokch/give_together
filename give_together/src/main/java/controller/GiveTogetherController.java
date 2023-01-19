@@ -13,7 +13,7 @@ public class GiveTogetherController extends MskimRequestMapping{
 	@RequestMapping("main")
 	public String main(HttpServletRequest request, HttpServletResponse response){
 		System.out.println("request ok");
-		return "/view/mainpage.jsp";
+		return "/view/mainPage.jsp";
 	}
 
 }
