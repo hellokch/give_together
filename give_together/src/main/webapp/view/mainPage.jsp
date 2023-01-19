@@ -68,7 +68,7 @@ a{
 </style>
 <div class="container">
 	<a href="${pageContext.request.contextPath}/view/donationPage.jsp">
-	<h1>기부 영역</h1>
+	<h1 >기부 영역</h1>
 	</a>
   <div class="row">
 

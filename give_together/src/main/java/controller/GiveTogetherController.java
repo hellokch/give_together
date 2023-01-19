@@ -15,5 +15,29 @@ public class GiveTogetherController extends MskimRequestMapping{
 		System.out.println("request ok");
 		return "/view/mainPage.jsp";
 	}
+	
+	@RequestMapping("donation")
+	public String donation(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To donationPage");
+		return "/view/donationPage.jsp";
+	}
+	
+	@RequestMapping("funding")
+	public String funding(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To fundingPage");
+		return "/view/fundingPage.jsp";
+	}
+	
+	@RequestMapping("volunteer")
+	public String voluteer(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To voluteerPage");
+		return "/view/volunteerPage.jsp";
+	}
+	
+	@RequestMapping("loginForm")
+	public String loginForm(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To loginForm");
+		return "/view/user/loginForm.jsp";
+	}
 
 }
