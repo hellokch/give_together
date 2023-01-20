@@ -85,9 +85,4 @@ public class Usergroup {
 				+ ", intro=" + intro + ", picture=" + picture + "]";
 	}
 	
-	
-	
-	
-	
-	
 }
