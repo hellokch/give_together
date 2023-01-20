@@ -16,7 +16,7 @@ li{
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style = "background-color : sky" >
   <div class="container-fluid" >
    
  
@@ -34,7 +34,9 @@ li{
         <li class="nav-item">
           <a class="nav-link active" href="${pageContext.request.contextPath}/giveTogether/volunteer">&nbsp;&nbsp;&nbsp;봉사</a>
         </li>
-       
+       <li class="nav-item">
+          <a class="nav-link active" href="#">&nbsp;&nbsp;&nbsp;소식</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link active" href="${pageContext.request.contextPath}/giveTogether/loginForm">&nbsp;&nbsp;&nbsp;로그인</a>
         </li>

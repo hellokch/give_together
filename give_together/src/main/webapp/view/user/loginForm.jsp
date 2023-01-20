@@ -6,9 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<body>
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 <style>
-#list-group{
+.list-group{
 	max-width : 20rem;
 	background-color : sky;
 	margin : 0 auto;	
@@ -17,7 +18,6 @@ input{
 	min-width : 18rem;
 }
 </style>
-<body>
 
 <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -27,10 +27,7 @@ input{
           단체회원입니다.
         </label>
       </div>
-  
-  
   </li>
-  
   <li class="list-group-item d-flex justify-content-between align-items-center">
 
     <div class="form-group">
@@ -53,9 +50,5 @@ input{
 </ul>
 
 
-
-
-
->>>>>>> branch 'main' of https://github.com/hellokch/give_together.git
 </body>
 </html>

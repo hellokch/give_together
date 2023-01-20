@@ -38,7 +38,6 @@ a{
 </style>
 <body>
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
-
 <style>
 div{
 	padding : 0.1rem;
@@ -67,7 +66,7 @@ a{
 
 </style>
 <div class="container">
-	<a href="${pageContext.request.contextPath}/view/donationPage.jsp">
+	<a href="${pageContext.request.contextPath}/giveTogether/donation">
 	<h1 >기부 영역</h1>
 	</a>
   <div class="row">
@@ -130,7 +129,7 @@ a{
 
 
 <div class="container">
-	<a href="${pageContext.request.contextPath}/view/fundingPage.jsp">
+	<a href="${pageContext.request.contextPath}/giveTogether/funding">
 	<h1>펀딩</h1>
 	</a>
   <div class="row">
@@ -190,7 +189,7 @@ a{
 </div>
 
 <div class="container">
-	<a href="${pageContext.request.contextPath}/view/volunteerPage.jsp">
+	<a href="${pageContext.request.contextPath}/giveTogether/volunteer">
 	<h1>봉사활동</h1>
 	</a>
   <div class="row">
