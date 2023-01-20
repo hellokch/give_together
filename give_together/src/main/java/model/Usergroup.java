@@ -83,6 +83,5 @@ public class Usergroup {
 		return "Usergroup [id=" + id + ", kinds=" + kinds + ", pass=" + pass + ", tel=" + tel + ", name=" + name
 				+ ", email=" + email + ", location=" + location + ", location1=" + location1 + ", p_name=" + p_name
 				+ ", intro=" + intro + ", picture=" + picture + "]";
-	}
-	
+	}	
 }
