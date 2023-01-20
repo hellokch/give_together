@@ -75,7 +75,7 @@ a{
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
-    <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
+    <p class="card-text">기부 게시판 첫번째 글 </p>
     <div class="progress">
   <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
@@ -89,7 +89,7 @@ a{
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
-    <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
+    <p class="card-text">기부 게시판 두번째 글 </p>
     <div class="progress">
   <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
@@ -102,7 +102,7 @@ a{
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black" >사진영역</div>
   <div class="card-body">
-    <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
+    <p class="card-text">기부 게시판 세번째 글 </p>
     <div class="progress">
   <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
@@ -115,7 +115,7 @@ a{
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
-    <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
+    <p class="card-text"> </p>
     <div class="progress">
   <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 </div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org/DTD config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 마이바티스 환경설정 -->
+<configuration>
+	<properties resource="mybatis/mybatis.properties"/>
+	<typeAliases>
+		<typeAlias type="model.Usergroup" alias="usergroup"/>
+		<typeAlias type="model.Userperson" alias="userperson"/>
+		<typeAlias type="model.Board" alias = "board"/>
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}"/>
+				<property name="url" value="${url}"/>
+				<property name="username" value="${username}"/>
+				<property name="password" value="${password}"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="mybatis/member.xml"/>
+		<mapper resource="mybatis/board.xml"/>
+	</mappers>
+
+</configuration>
