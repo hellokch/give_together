@@ -16,35 +16,28 @@
 <form action="${pageContext.request.contextPath}/member/loginPro" method="post" >
 
   <fieldset>
-    <legend>회원가입페이지 입니다(수정 가능합니다)232</legend>
+   <li class="list-group-item d-flex justify-content-center align-items-center">
+		<h3 for="exampleInputEmail1" class="form-label mt-4">단체 회원가입</h3>
+	</li>
+    
+    <li class="list-group-item d-flex justify-content-center align-items-center">
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label mt-4">디자인 참고용</label>
+      <input type="ID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">    
+    </div>
+
+  </li>
     
     
-    
-    
-    <fieldset class="form-group">
-      <legend class="mt-4">개인/단체</legend>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-        <label class="form-check-label" for="optionsRadios1">
-         개인
-        </label>
-      </div>
-      
-       <div class="form-check">
-        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked="">
-        <label class="form-check-label" for="optionsRadios2">
-         단체
-        </label>
-      </div>
     
     
     <div class="form-group">
-      <label for="InputEmail1" class="form-label mt-4">Email 입력</label>
+      <label for="InputEmail1" class="form-label mt-4">Email을 입력하세요.</label>
       <input type="text" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     </div>
     
     <div class="form-group">
-      <label for="InputPassword1" class="form-label mt-4">비밀번호 입력</label>
+      <label for="InputPassword1" class="form-label mt-4">비밀번호를 입력하세요</label>
       <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
     </div>
     
