@@ -1,6 +1,6 @@
 package model;
 
-public class UserGroup {
+public class Usergroup {
 	 String id;
 	 int kinds;
 	 String pass;
@@ -80,7 +80,7 @@ public class UserGroup {
 	}
 	@Override
 	public String toString() {
-		return "UserGroup [id=" + id + ", kinds=" + kinds + ", pass=" + pass + ", tel=" + tel + ", name=" + name
+		return "Usergroup [id=" + id + ", kinds=" + kinds + ", pass=" + pass + ", tel=" + tel + ", name=" + name
 				+ ", email=" + email + ", location=" + location + ", location1=" + location1 + ", p_name=" + p_name
 				+ ", intro=" + intro + ", picture=" + picture + "]";
 	}
