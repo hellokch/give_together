@@ -31,8 +31,8 @@ input{
   <li class="list-group-item d-flex justify-content-between align-items-center">
 
     <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">ID</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="id를 입력해 주세요." >
+      <label for="exampleInputEmail1" class="form-label mt-4">아이디</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ID를 입력해 주세요." >
     </div>
   </li>
 
@@ -40,12 +40,14 @@ input{
     <div class="form-group">
       <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      <a href="#" class="text-primary">회원가입</a>
     </div>
   
   
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="margin : 0 auto">
-    <button type="submit" class="btn btn-primary">로그인</button>
+    <a href="#">
+    <button type="submit" class="btn btn-primary">로그인</button></a>
   </li>
 </ul>
 
