@@ -4,10 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>개인 회원가입</title>
 <style>
-input{
-	min-width : 30rem
+.form-control {
+	min-width : 30rem;
+}
+.form-check-label{
+	font-size : 0.8rem;
 }
 </style>
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
@@ -17,29 +20,51 @@ input{
 <body>
 <ul class="list-group" style = "max-width : 50rem; margin : 0 auto">
 	<li class="list-group-item d-flex justify-content-center align-items-center">
-		<h3 for="exampleInputEmail1" class="form-label mt-4">개인 회원가입</h3>
+		<h3 class="form-label mt-4">개인 회원가입</h3>
 	</li>
   <li class="list-group-item d-flex justify-content-center align-items-center">
-    <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">아이디</label>
-      <input type="ID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
-      
-    </div>
+  <div class="form-group">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">아이디</label>
+  <input class="form-control form-control-sm" type="text" placeholder="아이디를 입력해주세요." id="inputSmall">
 
-  </li>
-  <li class="list-group-item d-flex justify-content-center align-items-center">
-        <div class="form-group">
-      <label for="exampleInputPassword1" class="form-label mt-4">비밀번호</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-  </li>
-  <li class="list-group-item d-flex justify-content-center align-items-center">
-   차차 추가 예정
-    
-  </li>
-</ul>
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">비밀번호</label>
+  <input class="form-control form-control-sm" type="password" placeholder="비밀번호를 입력해주세요." id="inputSmall">
+  
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">비밀번호 확인</label>
+  <input class="form-control form-control-sm" type="password" placeholder="비밀번호를 입력해주세요." id="inputSmall"> <br>
 
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">이름</label>
+  <input class="form-control form-control-sm" type="text" placeholder="이름 입력해주세요." id="inputSmall">
+  
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">별명</label>
+  <input class="form-control form-control-sm" type="text" placeholder="사용하실 별명을 입력해 주세요." id="inputSmall">
+  
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">전화번호</label>
+  <input class="form-control form-control-sm" type="text" placeholder="'-'없이 입력해 주세요." id="inputSmall">
+  
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">이메일</label>
+  <input class="form-control form-control-sm" type="text" placeholder="example@email.com" id="inputSmall">
+  
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">성별</label><br>
+   <input class="form-check-input" type="radio" name="gender"  value="1" id="male">
+   <label class="form-check-label" for="male">남자</label> &nbsp;&nbsp;
+   <input class="form-check-input" type="radio" name="gender"  value="2" id="female">
+   <label class="form-check-label" for="female">여자</label> <br>
+  
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">주소</label>
+  <input class="form-control form-control-sm" type="text" placeholder="상세 수정 필요" id="inputSmall">
+  
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">상세주소</label>
+  <input class="form-control form-control-sm" type="text" placeholder="상세 수정 필요" id="inputSmall">
+</div>
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="margin : 0 auto">
+    <a href="#">
+    <button type="submit" class="btn btn-primary">회원가입</button></a>
+  </li>
 
+ </ul>
+
+<br><br><br>
 
 
 </body>
