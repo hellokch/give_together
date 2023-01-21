@@ -2,6 +2,7 @@ package model;
 
 public class Userperson {
 	public String id;
+	public String kinds;
 	public String pass;
 	public String tel;
 	public String name;
@@ -16,6 +17,12 @@ public class Userperson {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+	public String getKinds() {
+		return kinds;
+	}
+	public void setKinds(String kinds) {
+		this.kinds = kinds;
 	}
 	public String getPass() {
 		return pass;
@@ -67,9 +74,11 @@ public class Userperson {
 	}
 	@Override
 	public String toString() {
-		return "Userperson [id=" + id + ", pass=" + pass + ", tel=" + tel + ", name=" + name + ", email=" + email
-				+ ", location=" + location + ", location1=" + location1 + ", nickname=" + nickname + ", gender="
-				+ gender + "]";
+		return "Userperson [id=" + id + ", kinds=" + kinds + ", pass=" + pass + ", tel=" + tel + ", name=" + name
+				+ ", email=" + email + ", location=" + location + ", location1=" + location1 + ", nickname=" + nickname
+				+ ", gender=" + gender + "]";
 	}
+	
+	
 	
 }

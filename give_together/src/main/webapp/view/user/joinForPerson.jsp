@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,10 +15,25 @@
 }
 </style>
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
+<script>
+
+function ref(){
+	person = 'a';
+	location.reload();
+}
+
+</script>
 </head>
 
-
 <body>
+
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+  <input type="radio" class="btn-check" name="kinds" value="1" id="btnradio1" onclick = 'ref()' autocomplete="on" checked>
+  <label class="btn btn-outline-primary" for="btnradio1">개인회원</label>
+  <input type="radio" class="btn-check" name="kinds" value="2" id="btnradio2" autocomplete="off" >
+  <label class="btn btn-outline-primary" for="btnradio2">단체회원</label>
+</div>
+<c:if test="${person eq 'a'}">
 <ul class="list-group" style = "max-width : 50rem; margin : 0 auto">
 	<li class="list-group-item d-flex justify-content-center align-items-center">
 		<h3 class="form-label mt-4">개인 회원가입</h3>
@@ -63,7 +79,11 @@
   </li>
 
  </ul>
+</c:if>
 
+<c:if test="${kinds eq 2}">
+단체회원 joinform
+</c:if>
 <br><br><br>
 
 

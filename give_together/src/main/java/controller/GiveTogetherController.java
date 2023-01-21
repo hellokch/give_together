@@ -3,12 +3,17 @@ package controller;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import dao.UserMybatisDao;
 import kic.mskim.MskimRequestMapping;
 import kic.mskim.RequestMapping;
 
+import model.Userperson;
+
 @WebServlet("/giveTogether/*")
 public class GiveTogetherController extends MskimRequestMapping{
+	UserMybatisDao userdao = new UserMybatisDao();
 	
 	@RequestMapping("main")
 	public String main(HttpServletRequest request, HttpServletResponse response){
@@ -38,6 +43,38 @@ public class GiveTogetherController extends MskimRequestMapping{
 	public String loginForm(HttpServletRequest request, HttpServletResponse response){
 		System.out.println("To loginForm");
 		return "/view/user/loginForm.jsp";
+	}
+	
+	@RequestMapping("joinUserPersonPro")
+	public String joinUserPersonPro(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("joinUserPersonPro");
+		
+		Userperson person = new Userperson();
+		person.setId(request.getParameter("id"));
+		person.setKinds(request.getParameter("kinds"));
+		person.setPass(request.getParameter("pass"));
+		person.setTel(request.getParameter("tel"));
+		person.setName(request.getParameter("name"));
+		person.setEmail(request.getParameter("email"));
+		person.setLocation(request.getParameter("location"));
+		person.setLocation1(request.getParameter("location1"));
+		person.setNickname(request.getParameter("nickname"));
+		person.setGender(Integer.parseInt(request.getParameter("gender")));
+		
+		int count = userdao.insertUserperson(person);
+		String msg="";
+		String url="";
+		
+		if(count>0) {
+			msg = person.getName() + "님의 가입이 완료되었습니다.";
+			url = "/view/loginForm";
+		}else {
+			msg = "회원가입에 실패 했습니다.";
+			url = "/view/joinForPerson";			
+		}
+		request.setAttribute("msg", msg);
+		request.setAttribute("url", url);
+		return "/view/alert.jsp";
 	}
 
 }
