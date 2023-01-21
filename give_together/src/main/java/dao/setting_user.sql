@@ -1,3 +1,4 @@
+drop table userperson;
 create table userperson(
 id varchar(20) primary key,
 kinds varchar(1),
@@ -8,9 +9,8 @@ email varchar(20),
 location varchar(30),
 location1 varchar(30),
 nickname varchar(10),
-gender varchar(1)
+gender number
 );
-
 create table usergroup(
 id varchar(20) primary key,
 kinds varchar(1),
