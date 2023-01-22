@@ -45,6 +45,23 @@ public class GiveTogetherController extends MskimRequestMapping{
 		return "/view/user/loginForm.jsp";
 	}
 	
+	@RequestMapping("joinForm")
+	public String joinForm(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To joinForm");
+		return "/view/user/joinForPerson.jsp";
+	}
+	
+	@RequestMapping("joinForGroup")
+	public String joinForGroup(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To joinFormForGroup");
+		return "/view/user/joinForGroup.jsp";
+	}
+	@RequestMapping("joinForPerson")
+	public String joinForPerson(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To joinFormForPerson");
+		return "/view/user/joinForPerson.jsp";
+	}
+	
 	@RequestMapping("joinUserPersonPro")
 	public String joinUserPersonPro(HttpServletRequest request, HttpServletResponse response){
 		System.out.println("joinUserPersonPro");
@@ -67,10 +84,10 @@ public class GiveTogetherController extends MskimRequestMapping{
 		
 		if(count>0) {
 			msg = person.getName() + "님의 가입이 완료되었습니다.";
-			url = "/view/loginForm";
+			url = "/view/user/loginForm";
 		}else {
 			msg = "회원가입에 실패 했습니다.";
-			url = "/view/joinForPerson";			
+			url = "/view/user/joinForPerson";			
 		}
 		request.setAttribute("msg", msg);
 		request.setAttribute("url", url);

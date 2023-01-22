@@ -6,6 +6,15 @@
 <head>
 <meta charset="UTF-8">
 <title>개인 회원가입</title>
+
+</head>
+
+
+<body>
+
+
+
+<link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 <style>
 .form-control {
 	min-width : 30rem;
@@ -14,66 +23,58 @@
 	font-size : 0.8rem;
 }
 </style>
-<link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
-
-</head>
-
-
-<body>
 <br>
-<ul class="list-group" style = "max-width : 50rem; margin : 0 auto">
+<form name="f" method="post" action="${pageContext.request.contextPath}/giveTogether/joinUserPersonPro">
+<div>
+<ul class="list-group" style = "max-width : 50rem; margin : 0 auto; list-style : none;">
+
 <br>
-<div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="max-width : 15rem; margin-left : 2rem">
-  <input type="radio" class="btn-check" name="kinds" value="1" id="btnradio1" autocomplete="on" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">개인회원</label>
-  <input type="radio" class="btn-check" name="kinds" value="2" id="btnradio2" autocomplete="off" >
-  <label class="btn btn-outline-primary" for="btnradio2">단체회원</label>
-</div>
 	<li class="list-group-item d-flex justify-content-center align-items-center">
 		<h3 class="form-label mt-4">개인 회원가입</h3>
 	</li>
 	
   <li class="list-group-item d-flex justify-content-center align-items-center">
   <div class="form-group">
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">아이디</label>
-  <input class="form-control form-control-sm" type="text" placeholder="아이디를 입력해주세요." id="inputSmall">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall1">아이디</label>
+  <input class="form-control form-control-sm" type="text" placeholder="아이디를 입력해주세요." id="inputSmall1" name="id">
 
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">비밀번호</label>
-  <input class="form-control form-control-sm" type="password" placeholder="비밀번호를 입력해주세요." id="inputSmall">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall2">비밀번호</label>
+  <input class="form-control form-control-sm" type="password" placeholder="비밀번호를 입력해주세요." id="inputSmall2" name="pass">
   
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">비밀번호 확인</label>
-  <input class="form-control form-control-sm" type="password" placeholder="비밀번호를 입력해주세요." id="inputSmall"> <br>
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall3">비밀번호 확인</label>
+  <input class="form-control form-control-sm" type="password" placeholder="비밀번호를 입력해주세요." id="inputSmall3"> <br>
 
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">이름</label>
-  <input class="form-control form-control-sm" type="text" placeholder="이름 입력해주세요." id="inputSmall">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall4">이름</label>
+  <input class="form-control form-control-sm" type="text" placeholder="이름 입력해주세요." id="inputSmall4" name="name">
   
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">별명</label>
-  <input class="form-control form-control-sm" type="text" placeholder="사용하실 별명을 입력해 주세요." id="inputSmall">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall5">별명</label>
+  <input class="form-control form-control-sm" type="text" placeholder="사용하실 별명을 입력해 주세요." id="inputSmall5" name="nickname">
   
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">전화번호</label>
-  <input class="form-control form-control-sm" type="text" placeholder="'-'없이 입력해 주세요." id="inputSmall">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall6">전화번호</label>
+  <input class="form-control form-control-sm" type="text" placeholder="'-'없이 입력해 주세요." id="inputSmall6" name="tel">
   
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">이메일</label>
-  <input class="form-control form-control-sm" type="text" placeholder="example@email.com" id="inputSmall">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall7">이메일</label>
+  <input class="form-control form-control-sm" type="text" placeholder="example@email.com" id="inputSmall7" name="email">
   
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">성별</label><br>
-   <input class="form-check-input" type="radio" name="gender"  value="1" id="male">
+  <label class="col-form-label col-form-label-sm mt-4" >성별</label><br>
+   <input class="form-check-input" type="radio" id="male" name="gender" value="1">
    <label class="form-check-label" for="male">남자</label> &nbsp;&nbsp;
-   <input class="form-check-input" type="radio" name="gender"  value="2" id="female">
+   <input class="form-check-input" type="radio"  id="female" name="gender" value="2">
    <label class="form-check-label" for="female">여자</label> <br>
   
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">주소</label>
-  <input class="form-control form-control-sm" type="text" placeholder="상세 수정 필요" id="inputSmall">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall9">주소</label>
+  <input class="form-control form-control-sm" type="text" placeholder="상세 수정 필요" id="inputSmall9" name="location">
   
-  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">상세주소</label>
-  <input class="form-control form-control-sm" type="text" placeholder="상세 수정 필요" id="inputSmall">
+  <label class="col-form-label col-form-label-sm mt-4" for="inputSmall10">상세주소</label>
+  <input class="form-control form-control-sm" type="text" placeholder="상세 수정 필요" id="inputSmall10" name="location1">
 </div>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="margin : 0 auto">
-    <a href="#">
-    <button type="submit" class="btn btn-primary">회원가입</button></a>
+    
+    <button type="submit" class="btn btn-primary">회원가입</button>
   </li>
-
  </ul>
+ </div>
+</form>
 
 
 

@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+
 <body>
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 <style>
@@ -22,7 +24,7 @@ input{
 <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
        <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="min-width : 1rem">
+        <input class="form-check-input" type="checkbox" name="kinds" value="1" id="flexCheckDefault" style="min-width : 1rem">
         <label class="form-check-label" for="flexCheckDefault">
           단체회원입니다.
         </label>
@@ -40,7 +42,7 @@ input{
     <div class="form-group">
       <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      <a href="#" class="text-primary">회원가입</a>
+      <a href="${pageContext.request.contextPath}/giveTogether/joinForm" class="text-primary">회원가입</a>
     </div>
   
   
