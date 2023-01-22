@@ -11,6 +11,7 @@ location1 varchar(30),
 nickname varchar(10),
 gender number
 );
+
 create table usergroup(
 id varchar(20) primary key,
 kinds varchar(1),

@@ -22,7 +22,7 @@
 	</environments>
 	<mappers>
 		<mapper resource="mybatis/user.xml"/>
-		<mapper resource="mybatis/board.xml"/>
+		<!-- <mapper resource="mybatis/board.xml"/> 테스팅 하는데 에러나서 주석처리했어요-->
 	</mappers>
 
 </configuration>

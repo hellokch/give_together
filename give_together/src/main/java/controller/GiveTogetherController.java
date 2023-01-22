@@ -63,7 +63,7 @@ public class GiveTogetherController extends MskimRequestMapping{
 	}
 	
 	@RequestMapping("joinUserPersonPro")
-	public String joinUserPersonPro(HttpServletRequest request, HttpServletResponse response){
+	public String joinUserPersonPro(HttpServletRequest request, HttpServletResponse response)throws Exception {
 		System.out.println("joinUserPersonPro");
 		
 		Userperson person = new Userperson();

@@ -6,7 +6,7 @@ import model.Userperson;
 import mybatis.MybatisConnection;
 
 public class UserMybatisDao {
-	private static final String ns = "user.";
+	private static final String ns = "userperson.";
 	
 	public int insertUserperson(Userperson person) {
 		SqlSession session = MybatisConnection.getConnection();
