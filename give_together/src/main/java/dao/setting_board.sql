@@ -1,5 +1,5 @@
 create table giveboard(
-index int primary key,
+index_num number primary key,
 id varchar(20),
 not_date date,
 mod_date date,
