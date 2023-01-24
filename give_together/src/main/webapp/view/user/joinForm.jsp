@@ -22,7 +22,7 @@
     
     <li class="list-group-item d-flex justify-content-center align-items-center">
     <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">디자인 참고용</label>
+      <label for="exampleInputEmail1" class="form-label mt-4">디자인 참고용()</label>
       <input type="ID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">    
     </div>
 
@@ -32,23 +32,34 @@
     
     
     <div class="form-group">
-      <label for="InputEmail1" class="form-label mt-4">Email을 입력하세요.</label>
+      <label for="InputEmail1" class="form-label mt-4">Email을 입력하세요.(id칸을 별개로 만드는게 맞을지 고민)</label>
       <input type="text" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     </div>
     
     <div class="form-group">
-      <label for="InputPassword1" class="form-label mt-4">비밀번호를 입력하세요</label>
-      <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+      <label for="InputPassword1" class="form-label mt-4">비밀번호</label>
+      <input type="password" class="form-control" id="InputPassword1" placeholder="비밀번호를 입력하세요.">
     </div>
+    
+       <div class="form-group">
+      <label for="InputPassword1" class="form-label mt-4">비밀번호 확인</label>
+      <input type="password" class="form-control" id="InputPassword2" placeholder="비밀번호를 한번 더 입력하세요.">
+    </div>
+    
     
       <div class="form-group">
       <label for="InputTEL" class="form-label mt-4">연락처 입력</label>
-      <input type="text" class="form-control" id="InputTEL" placeholder="TEL">
+      <input type="text" class="form-control" id="InputTEL" placeholder="-없이 입력하세요.">
     </div>
     
      <div class="form-group">
-      <label for="InputNAME" class="form-label mt-4">이름 입력</label>
-      <input type="text" class="form-control" id="InputNAME" placeholder="NAME">
+      <label for="InputNAME" class="form-label mt-4">단체명 입력</label>
+      <input type="text" class="form-control" id="InputP.NAME" placeholder="단체명을 입력하세요.">
+    </div>
+    
+     <div class="form-group">
+      <label for="InputNAME" class="form-label mt-4">대표자명 입력</label>
+      <input type="text" class="form-control" id="InputNAME" placeholder="성함을 입력하세요.">
     </div>
     
    
@@ -72,7 +83,12 @@
     </div>
   
     
-   <button type="submit">회원가입 완료</button>
+   <li class="list-group-item d-flex justify-content-between align-items-center" style="margin : 0 auto">
+   
+   <P></P>
+   
+   
+    <button type="submit" class="btn btn-primary">회원가입 완료</button>
     
   </fieldset></fieldset>
 </form> 
