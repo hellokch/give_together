@@ -27,10 +27,10 @@ public class GiveTogetherController extends MskimRequestMapping{
 	@RequestMapping("donation")
 	public String donation(HttpServletRequest request, HttpServletResponse response)  throws Exception {
 System.out.println("To donationPage");
-		
-//		List<Board> list=userdao.giveBoard();
-//		System.out.println("@@@"+list);
-		
+		/*
+		List<Board> list=userdao.giveBoard();
+		System.out.println("@@@"+list);
+		*/
 		return "/view/donationPage.jsp";
 	}
 	
