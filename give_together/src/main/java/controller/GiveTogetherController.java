@@ -1,14 +1,17 @@
 package controller;
 
+import java.util.List;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.UserMybatisDao;
+
 import kic.mskim.MskimRequestMapping;
 import kic.mskim.RequestMapping;
-
+import model.Board;
 import model.Userperson;
 
 @WebServlet("/giveTogether/*")
@@ -22,8 +25,18 @@ public class GiveTogetherController extends MskimRequestMapping{
 	}
 	
 	@RequestMapping("donation")
-	public String donation(HttpServletRequest request, HttpServletResponse response){
+	public String donation(HttpServletRequest request, HttpServletResponse response)  throws Exception {
 		System.out.println("To donationPage");
+		
+//		List<Board> list=userdao.giveBoard();
+//		System.out.println("@@@"+list);
+//		System.out.println("@@@"+list);
+//		System.out.println("@@@"+list);
+//		System.out.println("@@@"+list);
+//		System.out.println("@@@"+list);
+//		System.out.println("@@@"+list);
+//		model.addAttribute("list", list);		//해결중..
+		
 		return "/view/donationPage.jsp";
 	}
 	
