@@ -13,7 +13,6 @@
 <body>
 
 
-
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 <style>
 .form-control {
@@ -37,7 +36,7 @@
   <div class="form-group">
   <label class="col-form-label col-form-label-sm mt-4" for="inputSmall1">아이디</label>
   <input class="form-control form-control-sm" type="text" placeholder="아이디를 입력해주세요." id="inputSmall1" name="id">
-	<input type="text" name="kinds" value="1">
+  <input type="text" name="kinds" value="1" style = "display : none">
   <label class="col-form-label col-form-label-sm mt-4" for="inputSmall2">비밀번호</label>
   <input class="form-control form-control-sm" type="password" placeholder="비밀번호를 입력해주세요." id="inputSmall2" name="pass">
   
