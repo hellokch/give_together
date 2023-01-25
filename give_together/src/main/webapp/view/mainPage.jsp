@@ -7,35 +7,7 @@
 <title>Give 같이 하는 가치</title>
 
 </head>
-<link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 
-<style>
-div{
-	padding : 0.1rem;
-}
-a{
-	text-decoration-line: none;
-	text-decoration : none;
-}
-.container{
-	background-color : lightgreen; 
-	min-width : 76rem;	
-	margin-top : 1rem;
-	margin-bottom : 1rem;
-	padding-top : 1rem;
-
-}
-.row{	
-	justify-content : space-evenly;
-}
-.picarea{
-	min-width : 250px;
-	min-height : 250px;
-	background-color : yellow; 
-	margin-top : 0.5rem;
-}
-
-</style>
 <body>
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 <style>
@@ -65,6 +37,7 @@ a{
 }
 
 </style>
+
 <div class="container">
 	<a href="${pageContext.request.contextPath}/giveTogether/donation">
 	<h1 >기부 영역</h1>
