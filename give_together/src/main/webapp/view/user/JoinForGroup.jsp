@@ -110,7 +110,8 @@
       <label for="InputNAME" class="form-label mt-4">대표자명 입력</label>
       <input type="text" class="form-control" id="InputNAME" placeholder="성함을 입력하세요.">
     </div>
-    
+
+<%--주소 코드 --%>        
 <label for="Select1" class="form-label mt-4">주소입력</label>
 
    <input class="form-control-sm" style = "min-width : 3rem; display : none;" type="text" id="sample6_postcode" placeholder="우편번호">
@@ -120,7 +121,7 @@
 <input class="form-control form-control-sm" type="text" name="location1" id="sample6_detailAddress" placeholder="상세주소">
 <input class="form-control form-control-sm" type="text" id="sample6_extraAddress" placeholder="참고항목">
  
-    
+<%--주소 코드 --%>    
    
    <li class="list-group-item d-flex justify-content-between align-items-center" style="margin : 0 auto">
    <p></p>
