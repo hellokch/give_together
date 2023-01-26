@@ -40,6 +40,11 @@ li{
         <li class="nav-item">
           <a class="nav-link active" href="${pageContext.request.contextPath}/giveTogether/loginForm">&nbsp;&nbsp;&nbsp;로그인</a>
         </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" href="${pageContext.request.contextPath}/giveTogether/userPersonInfo">&nbsp;&nbsp;&nbsp;마이페이지</a>
+        </li>
+        
       </ul>
         
         </div>

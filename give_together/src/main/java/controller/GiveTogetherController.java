@@ -100,5 +100,11 @@ System.out.println("To donationPage");
 		request.setAttribute("url", url);
 		return "/view/alert.jsp";
 	}
-
+	
+	@RequestMapping("userPersonInfo")
+	public String userPersonInfo(HttpServletRequest request, HttpServletResponse response){
+		System.out.println("To joinFormForPerson");
+		return "/view/mypage/userPersonInfo.jsp";
+	}
+	
 }
