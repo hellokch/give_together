@@ -127,10 +127,10 @@ System.out.println("To donationPage");
 		
 		if(count>0) {
 			msg = person.getName() + "님의 가입이 완료되었습니다.";
-			url = "/view/user/loginForm";
+			url = "/giveTogether/loginForm";
 		}else {
 			msg = "회원가입에 실패 했습니다.";
-			url = "/view/user/joinForPerson";			
+			url = "/giveTogether/joinForPerson";			
 		}
 		request.setAttribute("msg", msg);
 		request.setAttribute("url", url);

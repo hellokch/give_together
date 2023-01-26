@@ -76,7 +76,9 @@
    <li class="list-group-item d-flex justify-content-center align-items-center">
 		<h3 for="exampleInputEmail1" class="form-label mt-4">단체 회원가입</h3>
 	</li>
-    
+    <li >
+		<h6 align="right" style = "margin-right:5rem"><a href="${pageContext.request.contextPath}/giveTogether/joinForPerson">개인회원 가입</a></h6>
+	</li>
            
     
     

@@ -74,6 +74,9 @@
 .wrap{
 	display: inline-flex;
 }
+a{
+
+}
 </style>
 <br>
 <form name="f" method="post" action="${pageContext.request.contextPath}/giveTogether/joinUserPersonPro">
@@ -82,7 +85,10 @@
 
 <br>
 	<li class="list-group-item d-flex justify-content-center align-items-center">
-		<h3 class="form-label mt-4">개인 회원가입</h3>
+		<h3 class="form-label mt-4">개인 회원가입</h3>		
+	</li>
+	<li >
+		<h6 align="right" style = "margin-right:5rem"><a href="${pageContext.request.contextPath}/giveTogether/joinForGroup">단체회원 가입</a></h6>
 	</li>
 	
   <li class="list-group-item d-flex justify-content-center align-items-center">
