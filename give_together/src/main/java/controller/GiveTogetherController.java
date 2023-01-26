@@ -12,6 +12,7 @@ import dao.UserMybatisDao;
 import kic.mskim.MskimRequestMapping;
 import kic.mskim.RequestMapping;
 import model.Board;
+import model.Usergroup;
 import model.Userperson;
 
 @WebServlet("/giveTogether/*")
@@ -63,6 +64,41 @@ System.out.println("To donationPage");
 		System.out.println("To joinFormForGroup");
 		return "/view/user/joinForGroup.jsp";
 	}
+	
+	@RequestMapping("joinUserGroupPro")
+	public String joinUserGroupPro(HttpServletRequest request, HttpServletResponse response)throws Exception {
+		
+		System.out.println("joinUserGroupPro");	
+		
+		Usergroup group = new Usergroup();
+		group.setId(request.getParameter("id"));
+		group.setKinds(request.getParameter("kinds"));
+		group.setPass(request.getParameter("pass"));
+		group.setTel(request.getParameter("tel"));
+		group.setName(request.getParameter("name"));
+		group.setEmail(request.getParameter("email"));
+		group.setLocation(request.getParameter("location"));
+		group.setLocation1(request.getParameter("location1"));
+		group.setP_name(request.getParameter("p_name"));
+		group.setIntro(request.getParameter("intro"));
+		group.setPicture(request.getParameter("picture"));
+		
+		int count = userdao.insertUsergroup(group);
+		String msg="";
+		String url="";
+		
+		if(count>0) {
+			msg = group.getP_name() + "님의 가입이 완료되었습니다.";
+			url = "/view/user/loginForm";
+		}else {
+			msg = "회원가입에 실패 했습니다.";
+			url = "/view/user/joinForGroup";			
+		}
+		request.setAttribute("msg", msg);
+		request.setAttribute("url", url);
+		return "/view/alert.jsp";
+	}
+	
 	@RequestMapping("joinForPerson")
 	public String joinForPerson(HttpServletRequest request, HttpServletResponse response){
 		System.out.println("To joinFormForPerson");

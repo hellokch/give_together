@@ -2,7 +2,7 @@ package model;
 
 public class Usergroup {
 	 String id;
-	 int kinds;
+	 String kinds;
 	 String pass;
 	 String tel;
 	 String name;
@@ -18,10 +18,10 @@ public class Usergroup {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public int getKinds() {
+	public String getKinds() {
 		return kinds;
 	}
-	public void setKinds(int kinds) {
+	public void setKinds(String kinds) {
 		this.kinds = kinds;
 	}
 	public String getPass() {

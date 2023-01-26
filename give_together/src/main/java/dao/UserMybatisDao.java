@@ -7,6 +7,7 @@ import java.util.Map;
 import org.apache.ibatis.session.SqlSession;
 
 import model.Board;
+import model.Usergroup;
 import model.Userperson;
 import mybatis.MybatisConnection;
 
@@ -19,8 +20,17 @@ public class UserMybatisDao {
 		int num = session.insert(ns + "insertUserperson", person);
 		MybatisConnection.close(session);
 		return num;
-		
+				
 	}
+	private static final String ns1 = "usergroup.";
+	private Map map1 = new HashMap();
+	
+	public int insertUsergroup(Usergroup group) {
+		SqlSession session = MybatisConnection.getConnection();
+		int num = session.insert(ns + "insertUsergroup", group);
+		MybatisConnection.close(session);
+		return num;	
+}	
 
 	public List<Board> giveBoard() {
 		System.out.println("To 11111");
