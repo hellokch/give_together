@@ -43,7 +43,7 @@ System.out.println("To donationPage");
 	@RequestMapping("volunteer")
 	public String voluteer(HttpServletRequest request, HttpServletResponse response){
 		System.out.println("To voluteerPage");
-		return "/view/volunteerPage.jsp";
+		return "/view/volunteer/volunteerForm.jsp";
 	}
 	
 	@RequestMapping("loginForm")
