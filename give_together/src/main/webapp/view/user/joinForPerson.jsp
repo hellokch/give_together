@@ -66,10 +66,13 @@
 <link rel="stylesheet" href = "${pageContext.request.contextPath}/resource/css/bootstrap.min.css">
 <style>
 .form-control {
-	min-width : 30rem;
+	width : 30rem;
 }
 .form-check-label{
 	font-size : 0.8rem;
+}
+.wrap{
+	display: inline-flex;
 }
 </style>
 <br>
@@ -109,19 +112,22 @@
    <input class="form-check-input" type="radio" id="male" name="gender" value="1">
    <label class="form-check-label" for="male">남자</label> &nbsp;&nbsp;
    <input class="form-check-input" type="radio"  id="female" name="gender" value="2">
-   <label class="form-check-label" for="female">여자</label> <br><br>
+   <label class="form-check-label" for="female">여자</label> <br>
   
   
   
-  
-  
-  <input class="form-control-sm" style = "min-width : 3rem; display : none;" type="text" id="sample6_postcode" placeholder="우편번호">
+<label class="col-form-label col-form-label-sm mt-4" for="adress">주소</label><br>
+<div class = "wrap" id = "adress">  
+<input class="form-control-sm form-control" style = "max-width : 5rem; " type="text" id="sample6_postcode" placeholder="우편번호">
 <input class="btn btn-primary btn-sm" type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-<br>
-<input class="form-control form-control-sm" type="text" name="location" id="sample6_address" placeholder="주소"><br>
-<input class="form-control form-control-sm" type="text" name="location1" id="sample6_detailAddress" placeholder="상세주소">
-<input class="form-control form-control-sm" type="text" id="sample6_extraAddress" placeholder="참고항목">
+</div>
 
+<br>
+<input class="form-control form-control-sm" type="text" name="location" id="sample6_address" placeholder="주소">
+<div class = "wrap">  
+<input class="form-control form-control-sm" style = "max-width : 15rem; " type="text" name="location1" id="sample6_detailAddress" placeholder="상세주소">
+<input class="form-control form-control-sm" style = "max-width : 15rem; " type="text" id="sample6_extraAddress" placeholder="참고항목">
+</div>
 
 </div>
   <li class="list-group-item d-flex justify-content-between align-items-center" style="margin : 0 auto">
