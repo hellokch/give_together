@@ -19,7 +19,7 @@ a{
 	text-decoration : none;
 }
 .container{
-	background-color : lightgreen; 
+	/* background-color : lightgreen; */ 
 	min-width : 76rem;	
 	margin-top : 1rem;
 	margin-bottom : 1rem;
@@ -32,7 +32,7 @@ a{
 .picarea{
 	min-width : 250px;
 	min-height : 250px;
-	background-color : yellow; 
+	/* background-color : yellow;  */
 	margin-top : 0.5rem;
 }
 
@@ -44,7 +44,7 @@ a{
 	</a>
   <div class="row">
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text">기부 게시판 첫번째 글 </p>
@@ -58,7 +58,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text">기부 게시판 두번째 글 </p>
@@ -71,7 +71,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black" >사진영역</div>
   <div class="card-body">
     <p class="card-text">기부 게시판 세번째 글 </p>
@@ -84,7 +84,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text"> </p>
@@ -107,7 +107,7 @@ a{
 	</a>
   <div class="row">
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
@@ -121,7 +121,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
@@ -134,7 +134,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black" >사진영역</div>
   <div class="card-body">
     <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
@@ -147,7 +147,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
@@ -167,7 +167,7 @@ a{
 	</a>
   <div class="row">
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
@@ -179,7 +179,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
@@ -190,7 +190,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black" >사진영역</div>
   <div class="card-body">
     <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
@@ -201,7 +201,7 @@ a{
 
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="card bg-secondary mb-3" style="max-width: 18rem;">
   <div class="picarea" style = "color:black">사진영역</div>
   <div class="card-body">
     <p class="card-text">sample text sample text sample text sample text sample text sample text sample text sample text </p>
